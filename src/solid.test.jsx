@@ -1,3 +1,5 @@
+import {jest} from "@jest/globals";
+import "@testing-library/jest-dom";
 import {render, fireEvent} from "@solidjs/testing-library";
 import {TodoList} from "./TodoList";
 
