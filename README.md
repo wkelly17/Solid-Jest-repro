@@ -1,0 +1,1 @@
+# Test Solid with Jest after removing browser field in package.json

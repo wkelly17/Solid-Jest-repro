@@ -1,0 +1,45 @@
+{
+  "name": "vite-template-solid",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-typescript": "^7.24.7",
+    "babel-jest": "^29.7.0",
+    "babel-preset-solid": "^1.8.19",
+    "jest": "^29.7.0",
+    "solid-devtools": "^0.29.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vite-plugin-solid": "^2.8.2"
+  },
+  "jest": {
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "extensionsToTreatAsEsm": [
+      ".jsx",
+      ".ts",
+      ".tsx"
+    ]
+  },
+  "dependencies": {
+    "@solidjs/testing-library": "^0.8.9",
+    "solid-js": "^1.8.11"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "solid-js@1.8.11": "patches/solid-js@1.8.11.patch"
+    }
+  }
+}
